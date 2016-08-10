@@ -3,6 +3,7 @@ import javax.swing.*;
 // event handling
 
 import java.awt.event.*;
+import java.awt.Component;
 
 // Object that allows me to use height & width units
 
@@ -134,7 +135,7 @@ public class Lesson26 extends JFrame{
 		public void actionPerformed(ActionEvent e){
 		
 			if(e.getSource() == button1){
-				
+
 				outputString += "Spinner 1 Value: " + spinner1.getValue() + "\n";
 				outputString += "Spinner 2 Value: " + spinner2.getValue() + "\n";
 				outputString += "Spinner 3 Value: " + spinner3.getValue() + "\n";

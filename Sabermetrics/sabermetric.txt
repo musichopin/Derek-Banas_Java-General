@@ -1,0 +1,44 @@
+LOAD SQL DUMP FILE
+(Shawn Lahman's Free BaseBall Database)
+
+mysql5 -u mysqladm -p < /Users/derekbanas/Downloads/lahman591.sql;
+
+SHOW DATABASES
+
+show databases;
+
+USE DATABASE
+
+use lahman591;
+
+HOW TO KILL A QUERY
+
+1. Open a new Terminal
+2. SHOW PROCESSLIST;
+3. KILL QUERY id;
+
+SHOW TABLES AND DESCRIBE THEM
+
+SHOW TABLES;
+DESCRIBE Batting; # Using Table Named Batting
+
+TEAM NAME AND SALARY
+
+describe salaries; # Show salaries Table
+
+PROOF SABERMETRICS WORKED 2002 ATHLETICS 103 WINS
+
+SELECT s.yearID, s.teamID, # s stands for salaries table
+# field'ler 2 table'da da ayný isimde olursa table ismi kullanýlmalý
+# ancak açýklayýcý olsun diye her durumda kullanýlabilir
+SUM(s.salary) AS SALARY, # when there is GROUP BY we use special function
+t.W AS WINS, # t stands for teams table
+(SALARY/t.W) AS CPW # Cost Per Win: CPW
+FROM salaries s, teams t 
+WHERE s.yearID = 2002 AND s.teamID = t.teamID  
+# WHERE merges multiple tables, besides fetching a specific value
+AND s.yearID = t.yearID 
+GROUP BY s.teamID # alt: GROUP BY teamID 
+# GROUP BY avoids duplicate data and arranges identical data into groups
+# ORDER BY ile SALARY, SUM'ý nitelemiþ
+ORDER BY SALARY DESC;

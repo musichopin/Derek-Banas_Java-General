@@ -75,6 +75,7 @@ public class LessonTwentyOne extends JFrame{
 //		is triggered on button1 then you want the class ListenForButton to be called
 //		to handle that event
 		button1.addActionListener(lForButton);
+//		***element.binder(event and handler)***
 		
 		thePanel.add(button1);
 		
@@ -148,15 +149,15 @@ public class LessonTwentyOne extends JFrame{
 	
 	// Implements ActionListener so it can react to events on components
 	
-	private class ListenForButton implements ActionListener{
+	private class ListenForButton implements ActionListener{ // ***event and handler***
 	
 	// This method is called when an event occurs
 	
-	public void actionPerformed(ActionEvent e){
+	public void actionPerformed(ActionEvent e){ // ***event***
 		
 		// Check if the source of the event was the button
 		
-		if(e.getSource() == button1){
+		if(e.getSource() == button1){ // ***(event) handler***
 			
 			buttonClicked++;
 			

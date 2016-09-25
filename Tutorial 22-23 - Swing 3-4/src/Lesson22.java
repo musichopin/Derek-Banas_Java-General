@@ -194,7 +194,7 @@ public class Lesson22 extends JFrame{
 		// occurs on the slider
 				
 		howManyTimes.addChangeListener(lForSlider);
-		
+//		alt: howManyTimes.addChangeListener(new ListenForSlider());
 		
 		thePanel.add(howManyTimes);
 		
@@ -208,6 +208,7 @@ public class Lesson22 extends JFrame{
 		
 	}
 	
+//	*Button için olan event handling'in içerisinde 4 iþlem yapýlýyor*
 	private class ListenForButton implements ActionListener{
 		
 		// This method is called when an event occurs

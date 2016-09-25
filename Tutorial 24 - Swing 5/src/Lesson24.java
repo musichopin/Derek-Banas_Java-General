@@ -55,6 +55,8 @@ public class Lesson24 extends JFrame{
 		button1 = new JButton("Get Answer");
 		
 		ListenForButton lForButton = new ListenForButton();
+//		alt:
+//		Lesson24.ListenForButton lForButton = new Lesson24().new ListenForButton();
 		
 //		event
 		button1.addActionListener(lForButton);

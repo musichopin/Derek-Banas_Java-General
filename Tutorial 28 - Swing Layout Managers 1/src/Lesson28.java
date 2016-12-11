@@ -85,7 +85,7 @@ public class Lesson28 extends JFrame{
 		
 		/* If you want more than one component to show
 		// up in the same part of a border layout put
-		// them in a panel and then add the panel to
+		// them in a sub-panel and then add the sub-panel to
 		// the border layout panel
 		
 		
@@ -101,7 +101,7 @@ public class Lesson28 extends JFrame{
 		
 		/* 3. BOX LAYOUT */
 		
-//		we use box instead of jpanel
+//		we used box instead of jpanel
 		Box theBox = Box.createHorizontalBox();
 		// You can also use Box theBox = Box.createVerticalBox();
 

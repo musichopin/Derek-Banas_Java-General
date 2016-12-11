@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" 
+   <servlet>
+       <servlet-name>Lesson41</servlet-name>
+       <servlet-class>helloservlets.Lesson41</servlet-class>
+   </servlet> 
+   <servlet-mapping>
+       <servlet-name>Lesson41</servlet-name>
+       <url-pattern>/Lesson41</url-pattern>
+   </servlet>
+</web-app>

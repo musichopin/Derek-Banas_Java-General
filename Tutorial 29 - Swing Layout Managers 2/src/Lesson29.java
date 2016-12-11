@@ -42,6 +42,7 @@ public class Lesson29 extends JFrame{
 //		1. GridLayout:
 		/*
 		thePanel.setLayout(new GridLayout(0,3,2,2));
+		// 3 sütun oluþtururuz
 		
 		but1 = new JButton("1");
 		but2 = new JButton("2");
@@ -148,11 +149,11 @@ public class Lesson29 extends JFrame{
 		gridConstraints.gridwidth = 20; // sonrakini(textResult) etkiler
 		gridConstraints.gridx = 5;
 		thePanel.add(textResult,gridConstraints);
-		gridConstraints.gridwidth = 1; // we change width back to 1 again
-		gridConstraints.gridx = 1;
+		gridConstraints.gridwidth = 1; // *we change width back to 1 again*
+		gridConstraints.gridx = 1; // *we change gridx back to 1 again*
 		gridConstraints.gridy = 2;
 		thePanel.add(but1,gridConstraints);
-		gridConstraints.gridx = 5;
+		gridConstraints.gridx = 5; // *gridy is still 2*
 		thePanel.add(but2,gridConstraints);
 		gridConstraints.gridx = 9; // sol üste göre 9 br saða gider
 		thePanel.add(but3,gridConstraints);

@@ -139,7 +139,7 @@ public class Lesson22 extends JFrame{
 		
 		Border operBorder = BorderFactory.createTitledBorder("Operation");
 		
-		// Set the border for the panel
+		// *Set the border for the panel*
 		
 		operPanel.setBorder(operBorder);
 		
@@ -216,7 +216,7 @@ public class Lesson22 extends JFrame{
 		public void actionPerformed(ActionEvent e){
 			
 			// Check if the source of the event was the button
-			
+//			***we don't need to include expression below since there is only one button***
 			if(e.getSource() == button1){
 				
 				// getText returns a String so you have to parse it
@@ -295,7 +295,7 @@ public class Lesson22 extends JFrame{
 			public void stateChanged(ChangeEvent e) {
 				
 				// Check if the source of the event was the slider
-				
+//				***we don't need to include expression below since there is only one slider***
 				if(e.getSource() == howManyTimes){
 					
 					label3.setText("Perform How Many Times? " + howManyTimes.getValue() );
